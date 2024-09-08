@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <!-- CSS -->
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 10;
+            padding: 12;
+            text-align: center; /* Rata tengah untuk seluruh halaman */
+        }
+        .title {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        .info {
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: left; /* Rata kiri untuk informasi */
+            max-width: 600px; /* Maksimal lebar agar tidak terlalu lebar */
+        }
+        .info p {
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .profile-img {
+            width: 160px; /* Atur lebar */
+            height: 180px; /* Atur tinggi  */
+            border-radius: 150%; /* Membuat gambar berbentuk lingkaran */
+            margin-top: 20px; /* Jarak atas gambar */
+            border: 3px solid #474646; /* Warna batas gambar */
+        }
+        table, th, td {
+            width: 100%; /* Lebar tabel */
+            border-collapse: collapse; /* Menghilangkan jarak antara border tabel */
+            margin-top: 15px; /* Jarak atas tabel */
+            border: 4px solid #ddd;
+            padding:9px;
+        }
+        .food-table {
+            background-color: #b5d1f0; 
+        }
+        .drink-table {
+            background-color: #f8d7da; 
+        }
+        .hobby-table {
+            background-color: #d4edda; 
+        }
+        tr:nth-child(even) {
+            background-color: #ece7e7; 
+        }
+        .section-separator {
+            margin: 25px 0; 
+            border-top: 5px solid #d0cfcf; /* Garis pemisah antar section */
+            max-width: 600px; /* lebar garis pemisah */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Portofolio</h1>
+
+    <!-- Gambar Profil -->
+    <img src="mypicture .jpg" alt="Profil" class="profile-img">
+
+    <div class="container">
+        <div class="info">
+            <p><span class="label">Nama:</span> Zia Djulyanza</p>
+            <p><span class="label">NPM:</span> 2308001010032</p>
+            <p><span class="label">Jurusan:</span> Manajemen Informatika</p>
+            <p><span class="label">Alamat:</span> Aceh Timur</p>
+            
+        <div class="section-separator"></div>
+            
+            <p><span class="label">Daftar Makanan Favorit:</span></p>
+            <table class="food-table">
+                <tr><td>Mie Pangsit</td></tr>
+                <tr><td>Nasi Goreng</td></tr>
+                <tr><td>Kue Canai</td></tr>
+            </table>
+
+        <div class="section-separator"></div>
+           
+            <p><span class="label">Daftar Minuman Favorit:</span></p>
+            <table class="drink-table">
+                <tr><td>Kopi Susu</td></tr>
+                <tr><td>Greentea Latte</td></tr>
+                <tr><td>Jus Alpukat</td></tr>
+            </table>
+            
+        <div class="section-separator"></div>  
+            
+            <p><span class="label">Hobby:</span></p>
+            <table class="hobby-table">
+                <tr><td>Berenang</td></tr>
+                <tr><td>Menggambar</td></tr>
+                <tr><td>Menyanyi</td></tr>
+            </table>
+        </div>        
+    </div>
+</body>
+</html>
