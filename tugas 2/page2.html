@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function getUserInfo() {
+            var name = prompt("Nama:");
+            var nim = prompt("NIM:");
+
+            if(name && nim) {
+                document.getElementById("name").innerHTML = name;
+                document.getElementById("nim").innerHTML = nim;
+            }
+        }
+    </script>
+</head>
+<body onload="getUserInfo()">
+    <div class="container">
+        <h1>Input User Info</h1>
+        <div id="result"></div>
+            <p>Nama: <span id="name"></span></p>
+            <p>NIM: <span id="nim"></span></p>
+        </div>
+    </div>
+</body>
+</html>
